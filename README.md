@@ -3,7 +3,7 @@
 # integration-testing
 Hello repository
 
-![Figure 1](/.eraser/XctcpcM0OXakq30OrasP___Qxtsss9kS8O75Kn5SgLmGHQrrkC2___---figure---lqXTQwJ4uuTVoO0DDvL7R---figure---2ULhwaR3We2TE73hP8KUbA.png "Figure 1")
+![Figure 1](/.eraser/XctcpcM0OXakq30OrasP___Qxtsss9kS8O75Kn5SgLmGHQrrkC2___---figure---_XLHDAEgQcE_U_3BTR59D---figure---2ULhwaR3We2TE73hP8KUbA.png "Figure 1")
 
 
 
