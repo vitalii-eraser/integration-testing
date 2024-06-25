@@ -13,5 +13,5 @@ loop [label: until success, color: green] {
 }
 
 Server - Service: Data processing
-Server --> Client: Data response
+
 deactivate Server

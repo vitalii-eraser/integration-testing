@@ -3,7 +3,11 @@
 # integration-testing
 Hello repository
 
-![Figure 1](/.eraser/XctcpcM0OXakq30OrasP___Qxtsss9kS8O75Kn5SgLmGHQrrkC2___---figure---_XLHDAEgQcE_U_3BTR59D---figure---2ULhwaR3We2TE73hP8KUbA.png "Figure 1")
+
+
+![Figure 1](/.eraser/XctcpcM0OXakq30OrasP___Qxtsss9kS8O75Kn5SgLmGHQrrkC2___---figure---3dbhheIhVEXqrcmfpG1wp---figure---rLkctJhloceqpL8duwsz-Q.png "Figure 1")
+
+![Figure 2](undefined "Figure 2")
 
 
 
@@ -11,7 +15,8 @@ Hello repository
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/README-sequence-diagram-1.eraserdiagram" data-element-id="gU--LIZYtax1YiBqFEoml"><img src="/.eraser/XctcpcM0OXakq30OrasP___Qxtsss9kS8O75Kn5SgLmGHQrrkC2___---diagram----b9ff8ff96807345e69b6d13413d95ec6.png" alt="" data-element-id="gU--LIZYtax1YiBqFEoml" /></a>
+<a href="/README-entity-relationship-1.eraserdiagram" data-element-id="6CXcny9W34gAigmxv_m8I"><img src="/.eraser/XctcpcM0OXakq30OrasP___Qxtsss9kS8O75Kn5SgLmGHQrrkC2___---diagram----19ab055a129fc094491a5695c63657a0.png" alt="" data-element-id="6CXcny9W34gAigmxv_m8I" /></a>
+<a href="/README-sequence-diagram-2.eraserdiagram" data-element-id="bb-C7BZeKtmkCvVtl54fl"><img src="/.eraser/XctcpcM0OXakq30OrasP___Qxtsss9kS8O75Kn5SgLmGHQrrkC2___---diagram----369debddb7dc30e8b752618beffbb07b.png" alt="" data-element-id="bb-C7BZeKtmkCvVtl54fl" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://eraser-qa.web.app/workspace/XctcpcM0OXakq30OrasP --->
