@@ -1,8 +1,8 @@
 <p><a target="_blank" href="https://eraser-qa.web.app/workspace/kaluo6NRFTo77Q2tvE2x" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
 
-![SEq deg](/.eraser/kaluo6NRFTo77Q2tvE2x___Qxtsss9kS8O75Kn5SgLmGHQrrkC2___---figure---u-bMf-fBnXDxUC0_HfDkA---figure---con2kklBrkUqIiNuRtDttg.png "SEq deg")
+![SEq deg](/.eraser/kaluo6NRFTo77Q2tvE2x___Qxtsss9kS8O75Kn5SgLmGHQrrkC2___---figure---drqGgvuQgT39agzkKoQZF---figure---con2kklBrkUqIiNuRtDttg.png "SEq deg")
 
-txt test
+txt test 2
 
 
 <!-- eraser-additional-content -->
