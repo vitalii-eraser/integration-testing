@@ -12,7 +12,7 @@ teams [icon: emerson, color: blue] {
   name string
 }
 
-workspaces [icon: home] {
+workspaces [icon: zoho_logo_2023] {
   id string
   createdAt timestamp
   folderId string
