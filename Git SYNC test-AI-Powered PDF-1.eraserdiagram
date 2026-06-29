@@ -135,7 +135,7 @@ freeform-diagram
       ],
       "id": "user_chat",
       "x": 66,
-      "y": 566,
+      "y": 466,
       "width": 50,
       "height": 50,
       "containerId": "chat"
