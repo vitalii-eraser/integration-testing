@@ -1,14 +1,14 @@
 freeform-diagram
 
 {
-  "title": "API Gateway",
+  "title": "API Gateway CHANGED---",
   "elements": [
     {
       "tag": "Shape",
       "shape": "hexagon",
       "texts": [
         {
-          "text": "API Gateway",
+          "text": "API Gateway 123",
           "fontSize": 14
         }
       ],
@@ -17,7 +17,7 @@ freeform-diagram
       "borderColor": "#7C5BB8",
       "id": "api_gateway",
       "x": 188.8671875,
-      "y": 240,
+      "y": 350,
       "width": 122.04550736999512,
       "height": 80
     },
@@ -26,7 +26,7 @@ freeform-diagram
       "icon": "layout",
       "texts": [
         {
-          "text": "Product Page",
+          "text": "123 Product Page",
           "fontSize": 14
         }
       ],
