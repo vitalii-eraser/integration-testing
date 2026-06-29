@@ -1,0 +1,874 @@
+freeform-diagram
+
+{
+  "title": "Microservices Architecture with API Gateway",
+  "elements": [
+    {
+      "tag": "Icon",
+      "icon": "layout",
+      "texts": [
+        {
+          "text": "Product Page",
+          "fontSize": 14
+        }
+      ],
+      "id": "product_page",
+      "x": 28.8671875,
+      "y": 255,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "tag": "Shape",
+      "shape": "hexagon",
+      "texts": [
+        {
+          "text": "API Gateway",
+          "fontSize": 14
+        }
+      ],
+      "icon": "shuffle",
+      "bgColor": "#E8E0F5",
+      "borderColor": "#7C5BB8",
+      "id": "api_gateway",
+      "x": 188.8671875,
+      "y": 240,
+      "width": 120,
+      "height": 80
+    },
+    {
+      "tag": "Group",
+      "title": {
+        "text": "Microservices",
+        "icon": "boxes",
+        "fontSize": 16,
+        "width": "snug"
+      },
+      "bgColor": "#F7F7FA",
+      "borderColor": "gray",
+      "id": "services_group",
+      "x": 388.8671875,
+      "y": 15,
+      "width": 760,
+      "height": 700
+    },
+    {
+      "tag": "Relationship",
+      "from": "product_page",
+      "fromPort": "right",
+      "to": "api_gateway",
+      "toPort": "left",
+      "id": "r1",
+      "x": 78.8671875,
+      "y": 280,
+      "width": 110,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          110,
+          0
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Shape",
+      "shape": "rectangle",
+      "texts": [
+        {
+          "text": "Item API",
+          "fontSize": 15
+        }
+      ],
+      "icon": "package",
+      "bgColor": "#FFF4E0",
+      "borderColor": "#E0A040",
+      "id": "item_svc",
+      "x": 428.8671875,
+      "y": 85,
+      "width": 160,
+      "height": 70,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Item DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "item_db",
+      "x": 483.8671875,
+      "y": 185,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "api_gateway",
+      "fromPort": "right",
+      "to": "item_svc",
+      "toPort": "left",
+      "id": "r2",
+      "x": 308.8671875,
+      "y": 256,
+      "width": 120,
+      "height": 136,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          40,
+          -136
+        ],
+        [
+          120,
+          -136
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Shape",
+      "shape": "rectangle",
+      "texts": [
+        {
+          "text": "Reviews API",
+          "fontSize": 15
+        }
+      ],
+      "icon": "message-square",
+      "bgColor": "#E0F0FF",
+      "borderColor": "#4A90D9",
+      "id": "reviews_svc",
+      "x": 668.8671875,
+      "y": 85,
+      "width": 160,
+      "height": 70,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Reviews DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "reviews_db",
+      "x": 688.8671875,
+      "y": 185,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Icon",
+      "icon": "sparkle",
+      "texts": [
+        {
+          "text": "AI",
+          "fontSize": 12
+        }
+      ],
+      "color": "#9B59B6",
+      "id": "reviews_ai",
+      "x": 768.8671875,
+      "y": 185,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "item_svc",
+      "fromPort": "bottom",
+      "to": "item_db",
+      "toPort": "top",
+      "id": "r7",
+      "x": 502.8671875,
+      "y": 155,
+      "width": 0,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          36
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Shape",
+      "shape": "rectangle",
+      "texts": [
+        {
+          "text": "Recommendations API",
+          "fontSize": 14
+        }
+      ],
+      "icon": "thumbs-up",
+      "bgColor": "#E6F7E6",
+      "borderColor": "#5BA85B",
+      "id": "recs_svc",
+      "x": 908.8671875,
+      "y": 85,
+      "width": 180,
+      "height": 70,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Recs DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "recs_db",
+      "x": 933.8671875,
+      "y": 185,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "api_gateway",
+      "fromPort": "right",
+      "to": "reviews_svc",
+      "toPort": "left",
+      "id": "r3",
+      "x": 308.8671875,
+      "y": 268,
+      "width": 360,
+      "height": 141,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          326,
+          0
+        ],
+        [
+          326,
+          -141
+        ],
+        [
+          360,
+          -141
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Icon",
+      "icon": "sparkle",
+      "texts": [
+        {
+          "text": "AI",
+          "fontSize": 12
+        }
+      ],
+      "color": "#9B59B6",
+      "id": "recs_ai",
+      "x": 1013.8671875,
+      "y": 185,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "reviews_svc",
+      "fromPort": "left",
+      "to": "item_svc",
+      "toPort": "right",
+      "lineStyle": "dashed",
+      "color": "gray",
+      "id": "r15",
+      "x": 668.8671875,
+      "y": 120,
+      "width": 80,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -80,
+          0
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Shape",
+      "shape": "rectangle",
+      "texts": [
+        {
+          "text": "Auth API",
+          "fontSize": 15
+        }
+      ],
+      "icon": "lock",
+      "bgColor": "#FFE0E0",
+      "borderColor": "#D95B5B",
+      "id": "auth_svc",
+      "x": 428.8671875,
+      "y": 455,
+      "width": 160,
+      "height": 70,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "reviews_svc",
+      "fromPort": "bottom",
+      "to": "reviews_db",
+      "toPort": "top",
+      "id": "r8",
+      "x": 742.8671875,
+      "y": 155,
+      "width": 29,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          -29,
+          18
+        ],
+        [
+          -29,
+          36
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Auth DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "auth_db",
+      "x": 483.8671875,
+      "y": 555,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Shape",
+      "shape": "rectangle",
+      "texts": [
+        {
+          "text": "Search API",
+          "fontSize": 15
+        }
+      ],
+      "icon": "search",
+      "bgColor": "#F0E5FA",
+      "borderColor": "#8E5BD9",
+      "id": "search_svc",
+      "x": 788.8671875,
+      "y": 455,
+      "width": 160,
+      "height": 70,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Search DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "search_db",
+      "x": 808.8671875,
+      "y": 555,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "reviews_svc",
+      "fromPort": "bottom",
+      "to": "reviews_ai",
+      "toPort": "top",
+      "id": "r9",
+      "x": 754.8671875,
+      "y": 155,
+      "width": 39,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          39,
+          18
+        ],
+        [
+          39,
+          36
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Icon",
+      "icon": "sparkle",
+      "texts": [
+        {
+          "text": "AI",
+          "fontSize": 12
+        }
+      ],
+      "color": "#9B59B6",
+      "id": "search_ai",
+      "x": 888.8671875,
+      "y": 555,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "api_gateway",
+      "fromPort": "right",
+      "to": "recs_svc",
+      "toPort": "left",
+      "id": "r4",
+      "x": 308.8671875,
+      "y": 280,
+      "width": 600,
+      "height": 154,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          568,
+          0
+        ],
+        [
+          568,
+          -154
+        ],
+        [
+          600,
+          -154
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "recs_svc",
+      "fromPort": "left",
+      "to": "item_svc",
+      "toPort": "right",
+      "lineStyle": "dashed",
+      "color": "gray",
+      "id": "r16",
+      "x": 908.8671875,
+      "y": 114,
+      "width": 320,
+      "height": 64,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -40,
+          0
+        ],
+        [
+          -40,
+          -64
+        ],
+        [
+          -280,
+          -64
+        ],
+        [
+          -280,
+          -1
+        ],
+        [
+          -320,
+          -1
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "recs_svc",
+      "fromPort": "bottom",
+      "to": "recs_db",
+      "toPort": "top",
+      "id": "r10",
+      "x": 986.8671875,
+      "y": 155,
+      "width": 28,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          -28,
+          18
+        ],
+        [
+          -28,
+          36
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "recs_svc",
+      "fromPort": "bottom",
+      "to": "recs_ai",
+      "toPort": "top",
+      "id": "r11",
+      "x": 1010.8671875,
+      "y": 155,
+      "width": 28,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          28,
+          18
+        ],
+        [
+          28,
+          36
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "api_gateway",
+      "fromPort": "right",
+      "to": "auth_svc",
+      "toPort": "left",
+      "id": "r5",
+      "x": 308.8671875,
+      "y": 304,
+      "width": 120,
+      "height": 192,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          40,
+          192
+        ],
+        [
+          120,
+          192
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "auth_svc",
+      "fromPort": "bottom",
+      "to": "auth_db",
+      "toPort": "top",
+      "id": "r12",
+      "x": 508.8671875,
+      "y": 531,
+      "width": 0,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          36
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "api_gateway",
+      "fromPort": "right",
+      "to": "search_svc",
+      "toPort": "left",
+      "id": "r6",
+      "x": 308.8671875,
+      "y": 292,
+      "width": 480,
+      "height": 198,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          420,
+          0
+        ],
+        [
+          420,
+          198
+        ],
+        [
+          480,
+          198
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "search_svc",
+      "fromPort": "left",
+      "to": "item_svc",
+      "toPort": "bottom",
+      "lineStyle": "dashed",
+      "color": "gray",
+      "id": "r17",
+      "x": 788.8671875,
+      "y": 502,
+      "width": 274,
+      "height": 347,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -166,
+          0
+        ],
+        [
+          -166,
+          -329
+        ],
+        [
+          -274,
+          -329
+        ],
+        [
+          -274,
+          -347
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "recs_svc",
+      "fromPort": "bottom",
+      "to": "search_svc",
+      "toPort": "top",
+      "lineStyle": "dashed",
+      "color": "gray",
+      "id": "r18",
+      "x": 998.8671875,
+      "y": 155,
+      "width": 130,
+      "height": 306,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          153
+        ],
+        [
+          -130,
+          153
+        ],
+        [
+          -130,
+          306
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "search_svc",
+      "fromPort": "bottom",
+      "to": "search_db",
+      "toPort": "top",
+      "id": "r13",
+      "x": 862.8671875,
+      "y": 531,
+      "width": 29,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          -29,
+          18
+        ],
+        [
+          -29,
+          36
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "search_svc",
+      "fromPort": "bottom",
+      "to": "search_ai",
+      "toPort": "top",
+      "id": "r14",
+      "x": 874.8671875,
+      "y": 531,
+      "width": 39,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          39,
+          18
+        ],
+        [
+          39,
+          36
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    }
+  ]
+}
