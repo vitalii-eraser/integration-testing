@@ -1,0 +1,684 @@
+freeform-diagram
+
+{
+  "title": "Microservices Architecture with API Gateway",
+  "elements": [
+    {
+      "tag": "Icon",
+      "icon": "layout",
+      "texts": [
+        {
+          "text": "Product Page",
+          "fontSize": 14
+        }
+      ],
+      "id": "product_page",
+      "x": 28.8671875,
+      "y": 333.21875,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "tag": "Shape",
+      "shape": "hexagon",
+      "texts": [
+        {
+          "text": "API Gateway",
+          "fontSize": 14
+        }
+      ],
+      "icon": "shuffle",
+      "bgColor": "#fde8d4",
+      "borderColor": "#e89a4a",
+      "id": "gateway",
+      "x": 188.8671875,
+      "y": 318.21875,
+      "width": 120,
+      "height": 80
+    },
+    {
+      "tag": "Relationship",
+      "from": "product_page",
+      "fromPort": "right",
+      "to": "gateway",
+      "toPort": "left",
+      "id": "r1",
+      "x": 78.8671875,
+      "y": 358.21875,
+      "width": 110,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          110,
+          0
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Group",
+      "title": {
+        "text": "Microservices",
+        "icon": "server",
+        "fontSize": 14,
+        "width": "snug"
+      },
+      "bgColor": "#f7f7fa",
+      "borderColor": "#bcbcd1",
+      "id": "services_group",
+      "x": 388.8671875,
+      "y": 33.21875,
+      "width": 760,
+      "height": 680
+    },
+    {
+      "tag": "Group",
+      "title": {
+        "text": "Item",
+        "fontSize": 13,
+        "width": "snug"
+      },
+      "bgColor": "#e6f0fb",
+      "borderColor": "#7aa9d6",
+      "id": "g_item",
+      "x": 418.8671875,
+      "y": 293.21875,
+      "width": 300,
+      "height": 130,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Icon",
+      "icon": "box",
+      "texts": [
+        {
+          "text": "Item API",
+          "fontSize": 12
+        }
+      ],
+      "id": "item_api",
+      "x": 443.8671875,
+      "y": 338.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_item"
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Item DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "item_db",
+      "x": 633.8671875,
+      "y": 338.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_item"
+    },
+    {
+      "tag": "Relationship",
+      "from": "gateway",
+      "fromPort": "right",
+      "to": "item_api",
+      "toPort": "left",
+      "id": "r3",
+      "x": 308.8671875,
+      "y": 346.21875,
+      "width": 135,
+      "height": 17,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          52,
+          0
+        ],
+        [
+          52,
+          17
+        ],
+        [
+          135,
+          17
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Group",
+      "title": {
+        "text": "Reviews",
+        "fontSize": 13,
+        "width": "snug"
+      },
+      "bgColor": "#e9f6ec",
+      "borderColor": "#7ab98a",
+      "id": "g_reviews",
+      "x": 418.8671875,
+      "y": 53.21875,
+      "width": 360,
+      "height": 130,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Icon",
+      "icon": "message-square",
+      "texts": [
+        {
+          "text": "Reviews API",
+          "fontSize": 12
+        }
+      ],
+      "id": "reviews_api",
+      "x": 443.8671875,
+      "y": 98.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_reviews"
+    },
+    {
+      "tag": "Icon",
+      "icon": "sparkle",
+      "texts": [
+        {
+          "text": "AI",
+          "fontSize": 12
+        }
+      ],
+      "id": "reviews_ai",
+      "x": 573.8671875,
+      "y": 98.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_reviews"
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Reviews DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "reviews_db",
+      "x": 703.8671875,
+      "y": 98.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_reviews"
+    },
+    {
+      "tag": "Relationship",
+      "from": "gateway",
+      "fromPort": "right",
+      "to": "reviews_api",
+      "toPort": "left",
+      "id": "r2",
+      "x": 308.8671875,
+      "y": 334.21875,
+      "width": 135,
+      "height": 211,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          40,
+          -211
+        ],
+        [
+          135,
+          -211
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Group",
+      "title": {
+        "text": "Recommendations",
+        "fontSize": 13,
+        "width": "snug"
+      },
+      "bgColor": "#f4e9fa",
+      "borderColor": "#b07ed1",
+      "id": "g_recs",
+      "x": 808.8671875,
+      "y": 293.21875,
+      "width": 320,
+      "height": 130,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Icon",
+      "icon": "thumbs-up",
+      "texts": [
+        {
+          "text": "Recs API",
+          "fontSize": 12
+        }
+      ],
+      "id": "recs_api",
+      "x": 833.8671875,
+      "y": 338.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_recs"
+    },
+    {
+      "tag": "Relationship",
+      "from": "reviews_api",
+      "fromPort": "bottom",
+      "to": "item_api",
+      "toPort": "top",
+      "color": "gray",
+      "id": "r7",
+      "x": 468.8671875,
+      "y": 167.21875,
+      "width": 0,
+      "height": 171,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          171
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Icon",
+      "icon": "sparkle",
+      "texts": [
+        {
+          "text": "AI",
+          "fontSize": 12
+        }
+      ],
+      "id": "recs_ai",
+      "x": 948.8671875,
+      "y": 338.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_recs"
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Recs DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "recs_db",
+      "x": 1063.8671875,
+      "y": 338.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_recs"
+    },
+    {
+      "tag": "Group",
+      "title": {
+        "text": "Auth",
+        "fontSize": 13,
+        "width": "snug"
+      },
+      "bgColor": "#fdecec",
+      "borderColor": "#d67a7a",
+      "id": "g_auth",
+      "x": 418.8671875,
+      "y": 553.21875,
+      "width": 300,
+      "height": 130,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Icon",
+      "icon": "lock",
+      "texts": [
+        {
+          "text": "Auth API",
+          "fontSize": 12
+        }
+      ],
+      "id": "auth_api",
+      "x": 443.8671875,
+      "y": 598.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_auth"
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Auth DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "auth_db",
+      "x": 633.8671875,
+      "y": 598.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_auth"
+    },
+    {
+      "tag": "Relationship",
+      "from": "gateway",
+      "fromPort": "right",
+      "to": "recs_api",
+      "toPort": "left",
+      "id": "r4",
+      "x": 308.8671875,
+      "y": 370.21875,
+      "width": 525,
+      "height": 352,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          34,
+          0
+        ],
+        [
+          34,
+          351
+        ],
+        [
+          426,
+          351
+        ],
+        [
+          426,
+          -1
+        ],
+        [
+          525,
+          -1
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Group",
+      "title": {
+        "text": "Search",
+        "fontSize": 13,
+        "width": "snug"
+      },
+      "bgColor": "#fdf6d9",
+      "borderColor": "#c9b34a",
+      "id": "g_search",
+      "x": 808.8671875,
+      "y": 553.21875,
+      "width": 320,
+      "height": 130,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "recs_api",
+      "fromPort": "left",
+      "to": "item_api",
+      "toPort": "right",
+      "color": "gray",
+      "id": "r8",
+      "x": 833.8671875,
+      "y": 357.21875,
+      "width": 340,
+      "height": 125,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -40,
+          0
+        ],
+        [
+          -40,
+          -119
+        ],
+        [
+          -270,
+          -119
+        ],
+        [
+          -270,
+          6
+        ],
+        [
+          -340,
+          6
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Icon",
+      "icon": "search",
+      "texts": [
+        {
+          "text": "Search API",
+          "fontSize": 12
+        }
+      ],
+      "id": "search_api",
+      "x": 833.8671875,
+      "y": 598.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_search"
+    },
+    {
+      "tag": "Icon",
+      "icon": "sparkle",
+      "texts": [
+        {
+          "text": "AI",
+          "fontSize": 12
+        }
+      ],
+      "id": "search_ai",
+      "x": 948.8671875,
+      "y": 598.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_search"
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Search DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "search_db",
+      "x": 1063.8671875,
+      "y": 598.21875,
+      "width": 50,
+      "height": 50,
+      "containerId": "g_search"
+    },
+    {
+      "tag": "Relationship",
+      "from": "gateway",
+      "fromPort": "right",
+      "to": "auth_api",
+      "toPort": "left",
+      "id": "r5",
+      "x": 308.8671875,
+      "y": 358.21875,
+      "width": 135,
+      "height": 265,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ],
+        [
+          46,
+          265
+        ],
+        [
+          135,
+          265
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "gateway",
+      "fromPort": "right",
+      "to": "search_api",
+      "toPort": "left",
+      "id": "r6",
+      "x": 308.8671875,
+      "y": 382.21875,
+      "width": 525,
+      "height": 343,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          28,
+          0
+        ],
+        [
+          28,
+          343
+        ],
+        [
+          434,
+          343
+        ],
+        [
+          434,
+          241
+        ],
+        [
+          525,
+          241
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "search_api",
+      "fromPort": "top",
+      "to": "item_api",
+      "toPort": "bottom",
+      "color": "gray",
+      "id": "r9",
+      "x": 852.8671875,
+      "y": 598.21875,
+      "width": 384,
+      "height": 191,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -110
+        ],
+        [
+          -384,
+          -110
+        ],
+        [
+          -384,
+          -191
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "lineWidth": 0.75
+    },
+    {
+      "tag": "Relationship",
+      "from": "recs_api",
+      "fromPort": "bottom",
+      "to": "search_api",
+      "toPort": "top",
+      "color": "gray",
+      "id": "r10",
+      "x": 864.8671875,
+      "y": 407.21875,
+      "width": 0,
+      "height": 191,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          191
+        ]
+      ],
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "lineWidth": 0.75
+    }
+  ]
+}
