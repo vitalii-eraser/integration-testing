@@ -1,12 +1,12 @@
 freeform-diagram
 
 {
-  "title": "AI-Powered PDF Chat Cloud Architecture",
+  "title": "AI-Powered PDF",
   "elements": [
     {
       "tag": "Group",
       "title": {
-        "text": "PDF Ingestion Pipeline",
+        "text": "PDF Ingestion Pipeline YES",
         "icon": "upload",
         "width": "full",
         "hAlign": "left"
@@ -29,7 +29,7 @@ freeform-diagram
       ],
       "id": "user_upload",
       "x": 65,
-      "y": 135,
+      "y": 185,
       "width": 50,
       "height": 50,
       "containerId": "ingest"
@@ -238,7 +238,7 @@ freeform-diagram
       "icon": "aws-api-gateway",
       "texts": [
         {
-          "text": "API Gateway"
+          "text": "API Gateway (NO)"
         }
       ],
       "id": "apigw",
