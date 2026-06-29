@@ -1,7 +1,7 @@
 freeform-diagram
 
 {
-  "title": "Microservices Architecture with API Gateway",
+  "title": "Microservices Architecture (EDIT)",
   "elements": [
     {
       "tag": "Shape",
@@ -32,7 +32,7 @@ freeform-diagram
       ],
       "id": "product_page",
       "x": 28.8671875,
-      "y": 315,
+      "y": 415,
       "width": 50,
       "height": 50
     },
