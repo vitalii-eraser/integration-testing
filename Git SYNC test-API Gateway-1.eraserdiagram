@@ -1,14 +1,14 @@
 freeform-diagram
 
 {
-  "title": "Microservices Architecture with API Gateway",
+  "title": "API Gateway",
   "elements": [
     {
       "tag": "Shape",
       "shape": "hexagon",
       "texts": [
         {
-          "text": "API Gateway 22",
+          "text": "API Gateway",
           "fontSize": 14
         }
       ],
@@ -16,7 +16,7 @@ freeform-diagram
       "bgColor": "#E8E0F5",
       "borderColor": "#7C5BB8",
       "id": "api_gateway",
-      "x": 197.33203125,
+      "x": 188.8671875,
       "y": 240,
       "width": 122.04550736999512,
       "height": 80
@@ -26,13 +26,13 @@ freeform-diagram
       "icon": "layout",
       "texts": [
         {
-          "text": "Product Page 33",
+          "text": "Product Page",
           "fontSize": 14
         }
       ],
       "id": "product_page",
-      "x": 38.33203125,
-      "y": 455,
+      "x": 28.8671875,
+      "y": 230,
       "width": 50,
       "height": 50
     },
@@ -47,26 +47,18 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r1",
-      "x": 88.73046875,
-      "y": 505,
-      "width": 109,
-      "height": 225,
+      "x": 79.265625,
+      "y": 280,
+      "width": 110,
+      "height": 0,
       "points": [
         [
           0,
           0
         ],
         [
-          48,
+          110,
           0
-        ],
-        [
-          48,
-          -225
-        ],
-        [
-          109,
-          -225
         ]
       ]
     },
@@ -81,7 +73,7 @@ freeform-diagram
       "bgColor": "#F7F7FA",
       "borderColor": "gray",
       "id": "services_group",
-      "x": 397.33203125,
+      "x": 388.8671875,
       "y": 15,
       "width": 760,
       "height": 700
@@ -99,7 +91,7 @@ freeform-diagram
       "bgColor": "#E0F0FF",
       "borderColor": "#4A90D9",
       "id": "reviews_svc",
-      "x": 677.33203125,
+      "x": 668.8671875,
       "y": 85,
       "width": 160,
       "height": 70,
@@ -116,9 +108,9 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r3",
-      "x": 317.33203125,
+      "x": 311.265625,
       "y": 268,
-      "width": 360,
+      "width": 358,
       "height": 141,
       "points": [
         [
@@ -126,15 +118,15 @@ freeform-diagram
           0
         ],
         [
-          326,
+          318,
           0
         ],
         [
-          326,
+          318,
           -141
         ],
         [
-          360,
+          358,
           -141
         ]
       ]
@@ -149,7 +141,7 @@ freeform-diagram
         }
       ],
       "id": "auth_db",
-      "x": 492.33203125,
+      "x": 483.8671875,
       "y": 555,
       "width": 50,
       "height": 50,
@@ -165,7 +157,7 @@ freeform-diagram
         }
       ],
       "id": "reviews_db",
-      "x": 697.33203125,
+      "x": 688.8671875,
       "y": 185,
       "width": 50,
       "height": 50,
@@ -182,7 +174,7 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r8",
-      "x": 751.33203125,
+      "x": 742.8671875,
       "y": 155,
       "width": 29,
       "height": 36,
@@ -216,7 +208,7 @@ freeform-diagram
       ],
       "color": "#9B59B6",
       "id": "recs_ai",
-      "x": 1022.33203125,
+      "x": 1013.8671875,
       "y": 185,
       "width": 50,
       "height": 50,
@@ -235,7 +227,7 @@ freeform-diagram
       "bgColor": "#F0E5FA",
       "borderColor": "#8E5BD9",
       "id": "search_svc",
-      "x": 797.33203125,
+      "x": 788.8671875,
       "y": 455,
       "width": 160,
       "height": 70,
@@ -252,9 +244,9 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r6",
-      "x": 317.33203125,
+      "x": 311.265625,
       "y": 292,
-      "width": 480,
+      "width": 478,
       "height": 198,
       "points": [
         [
@@ -262,15 +254,15 @@ freeform-diagram
           0
         ],
         [
-          420,
+          429,
           0
         ],
         [
-          420,
+          429,
           198
         ],
         [
-          480,
+          478,
           198
         ]
       ]
@@ -288,7 +280,7 @@ freeform-diagram
       "bgColor": "#E6F7E6",
       "borderColor": "#5BA85B",
       "id": "recs_svc",
-      "x": 917.33203125,
+      "x": 908.8671875,
       "y": 85,
       "width": 180,
       "height": 70,
@@ -305,7 +297,7 @@ freeform-diagram
       "endArrowhead": "triangle",
       "lineWidth": 0.75,
       "id": "r18",
-      "x": 1007.33203125,
+      "x": 998.8671875,
       "y": 155,
       "width": 130,
       "height": 306,
@@ -339,7 +331,7 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r11",
-      "x": 1019.33203125,
+      "x": 1010.8671875,
       "y": 155,
       "width": 28,
       "height": 36,
@@ -373,9 +365,9 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r4",
-      "x": 317.33203125,
+      "x": 311.265625,
       "y": 280,
-      "width": 600,
+      "width": 598,
       "height": 154,
       "points": [
         [
@@ -383,15 +375,15 @@ freeform-diagram
           0
         ],
         [
-          568,
+          566,
           0
         ],
         [
-          568,
+          566,
           -154
         ],
         [
-          600,
+          598,
           -154
         ]
       ]
@@ -406,7 +398,7 @@ freeform-diagram
         }
       ],
       "id": "recs_db",
-      "x": 942.33203125,
+      "x": 933.8671875,
       "y": 185,
       "width": 50,
       "height": 50,
@@ -423,7 +415,7 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r10",
-      "x": 995.33203125,
+      "x": 986.8671875,
       "y": 155,
       "width": 28,
       "height": 36,
@@ -459,7 +451,7 @@ freeform-diagram
       "bgColor": "#FFF4E0",
       "borderColor": "#E0A040",
       "id": "item_svc",
-      "x": 437.33203125,
+      "x": 428.8671875,
       "y": 85,
       "width": 160,
       "height": 70,
@@ -476,7 +468,7 @@ freeform-diagram
       "endArrowhead": "triangle",
       "lineWidth": 0.75,
       "id": "r16",
-      "x": 917.33203125,
+      "x": 908.8671875,
       "y": 114,
       "width": 320,
       "height": 64,
@@ -518,7 +510,7 @@ freeform-diagram
       "endArrowhead": "triangle",
       "lineWidth": 0.75,
       "id": "r15",
-      "x": 677.33203125,
+      "x": 668.8671875,
       "y": 120,
       "width": 80,
       "height": 0,
@@ -544,7 +536,7 @@ freeform-diagram
       "endArrowhead": "triangle",
       "lineWidth": 0.75,
       "id": "r17",
-      "x": 797.33203125,
+      "x": 788.8671875,
       "y": 502,
       "width": 274,
       "height": 347,
@@ -582,9 +574,9 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r2",
-      "x": 317.33203125,
+      "x": 311.265625,
       "y": 256,
-      "width": 120,
+      "width": 118,
       "height": 136,
       "points": [
         [
@@ -592,15 +584,15 @@ freeform-diagram
           0
         ],
         [
-          40,
+          39,
           0
         ],
         [
-          40,
+          39,
           -136
         ],
         [
-          120,
+          118,
           -136
         ]
       ]
@@ -618,7 +610,7 @@ freeform-diagram
       "bgColor": "#FFE0E0",
       "borderColor": "#D95B5B",
       "id": "auth_svc",
-      "x": 437.33203125,
+      "x": 428.8671875,
       "y": 455,
       "width": 160,
       "height": 70,
@@ -635,9 +627,9 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r5",
-      "x": 317.33203125,
+      "x": 311.265625,
       "y": 304,
-      "width": 120,
+      "width": 118,
       "height": 192,
       "points": [
         [
@@ -645,15 +637,15 @@ freeform-diagram
           0
         ],
         [
-          40,
+          39,
           0
         ],
         [
-          40,
+          39,
           192
         ],
         [
-          120,
+          118,
           192
         ]
       ]
@@ -669,7 +661,7 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r12",
-      "x": 517.33203125,
+      "x": 508.8671875,
       "y": 531,
       "width": 0,
       "height": 36,
@@ -694,7 +686,7 @@ freeform-diagram
         }
       ],
       "id": "item_db",
-      "x": 492.33203125,
+      "x": 483.8671875,
       "y": 185,
       "width": 50,
       "height": 50,
@@ -711,7 +703,7 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r7",
-      "x": 511.33203125,
+      "x": 502.8671875,
       "y": 155,
       "width": 0,
       "height": 36,
@@ -737,7 +729,7 @@ freeform-diagram
       ],
       "color": "#9B59B6",
       "id": "search_ai",
-      "x": 897.33203125,
+      "x": 888.8671875,
       "y": 555,
       "width": 50,
       "height": 50,
@@ -754,7 +746,7 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r14",
-      "x": 883.33203125,
+      "x": 874.8671875,
       "y": 531,
       "width": 39,
       "height": 36,
@@ -788,7 +780,7 @@ freeform-diagram
       ],
       "color": "#9B59B6",
       "id": "reviews_ai",
-      "x": 777.33203125,
+      "x": 768.8671875,
       "y": 185,
       "width": 50,
       "height": 50,
@@ -805,7 +797,7 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r9",
-      "x": 763.33203125,
+      "x": 754.8671875,
       "y": 155,
       "width": 39,
       "height": 36,
@@ -838,7 +830,7 @@ freeform-diagram
         }
       ],
       "id": "search_db",
-      "x": 817.33203125,
+      "x": 808.8671875,
       "y": 555,
       "width": 50,
       "height": 50,
@@ -855,7 +847,7 @@ freeform-diagram
       "color": "#1c1c1c",
       "lineWidth": 0.75,
       "id": "r13",
-      "x": 871.33203125,
+      "x": 862.8671875,
       "y": 531,
       "width": 29,
       "height": 36,
