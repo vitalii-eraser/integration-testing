@@ -1,14 +1,14 @@
 freeform-diagram
 
 {
-  "title": "Microservices Architecture with API Gateway",
+  "title": "Microservices Architecture with API Gateway CHANGED",
   "elements": [
     {
       "tag": "Icon",
       "icon": "layout",
       "texts": [
         {
-          "text": "Product Page",
+          "text": "Product Page 33",
           "fontSize": 14
         }
       ],
@@ -23,7 +23,7 @@ freeform-diagram
       "shape": "hexagon",
       "texts": [
         {
-          "text": "API Gateway",
+          "text": "API Gateway 22",
           "fontSize": 14
         }
       ],
