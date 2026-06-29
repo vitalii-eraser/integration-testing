@@ -1,23 +1,8 @@
 freeform-diagram
 
 {
-  "title": "Microservices Architecture with API Gateway CHANGED2",
+  "title": "Microservices Architecture with API Gateway",
   "elements": [
-    {
-      "tag": "Icon",
-      "icon": "layout",
-      "texts": [
-        {
-          "text": "Product Page 33",
-          "fontSize": 14
-        }
-      ],
-      "id": "product_page",
-      "x": 28.8671875,
-      "y": 120,
-      "width": 50,
-      "height": 50
-    },
     {
       "tag": "Shape",
       "shape": "hexagon",
@@ -31,10 +16,59 @@ freeform-diagram
       "bgColor": "#E8E0F5",
       "borderColor": "#7C5BB8",
       "id": "api_gateway",
-      "x": 188.8671875,
+      "x": 197.33203125,
       "y": 240,
-      "width": 120,
+      "width": 122.04550736999512,
       "height": 80
+    },
+    {
+      "tag": "Icon",
+      "icon": "layout",
+      "texts": [
+        {
+          "text": "Product Page 33",
+          "fontSize": 14
+        }
+      ],
+      "id": "product_page",
+      "x": 38.33203125,
+      "y": 455,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "tag": "Relationship",
+      "from": "product_page",
+      "fromPort": "right",
+      "to": "api_gateway",
+      "toPort": "left",
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75,
+      "id": "r1",
+      "x": 88.73046875,
+      "y": 505,
+      "width": 109,
+      "height": 225,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          48,
+          -225
+        ],
+        [
+          109,
+          -225
+        ]
+      ]
     },
     {
       "tag": "Group",
@@ -47,105 +81,10 @@ freeform-diagram
       "bgColor": "#F7F7FA",
       "borderColor": "gray",
       "id": "services_group",
-      "x": 388.8671875,
+      "x": 397.33203125,
       "y": 15,
       "width": 760,
       "height": 700
-    },
-    {
-      "tag": "Relationship",
-      "from": "product_page",
-      "fromPort": "right",
-      "to": "api_gateway",
-      "toPort": "left",
-      "id": "r1",
-      "x": 78.8671875,
-      "y": 280,
-      "width": 110,
-      "height": 0,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          110,
-          0
-        ]
-      ],
-      "endArrowhead": "triangle",
-      "lineStyle": "solid",
-      "color": "#1c1c1c",
-      "lineWidth": 0.75
-    },
-    {
-      "tag": "Shape",
-      "shape": "rectangle",
-      "texts": [
-        {
-          "text": "Item API",
-          "fontSize": 15
-        }
-      ],
-      "icon": "package",
-      "bgColor": "#FFF4E0",
-      "borderColor": "#E0A040",
-      "id": "item_svc",
-      "x": 428.8671875,
-      "y": 85,
-      "width": 160,
-      "height": 70,
-      "containerId": "services_group"
-    },
-    {
-      "tag": "Icon",
-      "icon": "database",
-      "texts": [
-        {
-          "text": "Item DB",
-          "fontSize": 12
-        }
-      ],
-      "id": "item_db",
-      "x": 483.8671875,
-      "y": 185,
-      "width": 50,
-      "height": 50,
-      "containerId": "services_group"
-    },
-    {
-      "tag": "Relationship",
-      "from": "api_gateway",
-      "fromPort": "right",
-      "to": "item_svc",
-      "toPort": "left",
-      "id": "r2",
-      "x": 308.8671875,
-      "y": 256,
-      "width": 120,
-      "height": 136,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          40,
-          0
-        ],
-        [
-          40,
-          -136
-        ],
-        [
-          120,
-          -136
-        ]
-      ],
-      "endArrowhead": "triangle",
-      "lineStyle": "solid",
-      "color": "#1c1c1c",
-      "lineWidth": 0.75
     },
     {
       "tag": "Shape",
@@ -160,104 +99,10 @@ freeform-diagram
       "bgColor": "#E0F0FF",
       "borderColor": "#4A90D9",
       "id": "reviews_svc",
-      "x": 668.8671875,
+      "x": 677.33203125,
       "y": 85,
       "width": 160,
       "height": 70,
-      "containerId": "services_group"
-    },
-    {
-      "tag": "Icon",
-      "icon": "database",
-      "texts": [
-        {
-          "text": "Reviews DB",
-          "fontSize": 12
-        }
-      ],
-      "id": "reviews_db",
-      "x": 688.8671875,
-      "y": 185,
-      "width": 50,
-      "height": 50,
-      "containerId": "services_group"
-    },
-    {
-      "tag": "Icon",
-      "icon": "sparkle",
-      "texts": [
-        {
-          "text": "AI",
-          "fontSize": 12
-        }
-      ],
-      "color": "#9B59B6",
-      "id": "reviews_ai",
-      "x": 768.8671875,
-      "y": 185,
-      "width": 50,
-      "height": 50,
-      "containerId": "services_group"
-    },
-    {
-      "tag": "Relationship",
-      "from": "item_svc",
-      "fromPort": "bottom",
-      "to": "item_db",
-      "toPort": "top",
-      "id": "r7",
-      "x": 502.8671875,
-      "y": 155,
-      "width": 0,
-      "height": 36,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          36
-        ]
-      ],
-      "endArrowhead": "triangle",
-      "lineStyle": "solid",
-      "color": "#1c1c1c",
-      "lineWidth": 0.75
-    },
-    {
-      "tag": "Shape",
-      "shape": "rectangle",
-      "texts": [
-        {
-          "text": "Recommendations API",
-          "fontSize": 14
-        }
-      ],
-      "icon": "thumbs-up",
-      "bgColor": "#E6F7E6",
-      "borderColor": "#5BA85B",
-      "id": "recs_svc",
-      "x": 908.8671875,
-      "y": 85,
-      "width": 180,
-      "height": 70,
-      "containerId": "services_group"
-    },
-    {
-      "tag": "Icon",
-      "icon": "database",
-      "texts": [
-        {
-          "text": "Recs DB",
-          "fontSize": 12
-        }
-      ],
-      "id": "recs_db",
-      "x": 933.8671875,
-      "y": 185,
-      "width": 50,
-      "height": 50,
       "containerId": "services_group"
     },
     {
@@ -266,8 +111,12 @@ freeform-diagram
       "fromPort": "right",
       "to": "reviews_svc",
       "toPort": "left",
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75,
       "id": "r3",
-      "x": 308.8671875,
+      "x": 317.33203125,
       "y": 268,
       "width": 360,
       "height": 141,
@@ -288,24 +137,35 @@ freeform-diagram
           360,
           -141
         ]
-      ],
-      "endArrowhead": "triangle",
-      "lineStyle": "solid",
-      "color": "#1c1c1c",
-      "lineWidth": 0.75
+      ]
     },
     {
       "tag": "Icon",
-      "icon": "sparkle",
+      "icon": "database",
       "texts": [
         {
-          "text": "AI",
+          "text": "Auth DB",
           "fontSize": 12
         }
       ],
-      "color": "#9B59B6",
-      "id": "recs_ai",
-      "x": 1013.8671875,
+      "id": "auth_db",
+      "x": 492.33203125,
+      "y": 555,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Reviews DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "reviews_db",
+      "x": 697.33203125,
       "y": 185,
       "width": 50,
       "height": 50,
@@ -314,56 +174,15 @@ freeform-diagram
     {
       "tag": "Relationship",
       "from": "reviews_svc",
-      "fromPort": "left",
-      "to": "item_svc",
-      "toPort": "right",
-      "lineStyle": "dashed",
-      "color": "gray",
-      "id": "r15",
-      "x": 668.8671875,
-      "y": 120,
-      "width": 80,
-      "height": 0,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          -80,
-          0
-        ]
-      ],
-      "endArrowhead": "triangle",
-      "lineWidth": 0.75
-    },
-    {
-      "tag": "Shape",
-      "shape": "rectangle",
-      "texts": [
-        {
-          "text": "Auth API",
-          "fontSize": 15
-        }
-      ],
-      "icon": "lock",
-      "bgColor": "#FFE0E0",
-      "borderColor": "#D95B5B",
-      "id": "auth_svc",
-      "x": 428.8671875,
-      "y": 455,
-      "width": 160,
-      "height": 70,
-      "containerId": "services_group"
-    },
-    {
-      "tag": "Relationship",
-      "from": "reviews_svc",
       "fromPort": "bottom",
       "to": "reviews_db",
       "toPort": "top",
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75,
       "id": "r8",
-      "x": 742.8671875,
+      "x": 751.33203125,
       "y": 155,
       "width": 29,
       "height": 36,
@@ -384,24 +203,21 @@ freeform-diagram
           -29,
           36
         ]
-      ],
-      "endArrowhead": "triangle",
-      "lineStyle": "solid",
-      "color": "#1c1c1c",
-      "lineWidth": 0.75
+      ]
     },
     {
       "tag": "Icon",
-      "icon": "database",
+      "icon": "sparkle",
       "texts": [
         {
-          "text": "Auth DB",
+          "text": "AI",
           "fontSize": 12
         }
       ],
-      "id": "auth_db",
-      "x": 483.8671875,
-      "y": 555,
+      "color": "#9B59B6",
+      "id": "recs_ai",
+      "x": 1022.33203125,
+      "y": 185,
       "width": 50,
       "height": 50,
       "containerId": "services_group"
@@ -419,38 +235,113 @@ freeform-diagram
       "bgColor": "#F0E5FA",
       "borderColor": "#8E5BD9",
       "id": "search_svc",
-      "x": 788.8671875,
+      "x": 797.33203125,
       "y": 455,
       "width": 160,
       "height": 70,
       "containerId": "services_group"
     },
     {
-      "tag": "Icon",
-      "icon": "database",
+      "tag": "Relationship",
+      "from": "api_gateway",
+      "fromPort": "right",
+      "to": "search_svc",
+      "toPort": "left",
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75,
+      "id": "r6",
+      "x": 317.33203125,
+      "y": 292,
+      "width": 480,
+      "height": 198,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          420,
+          0
+        ],
+        [
+          420,
+          198
+        ],
+        [
+          480,
+          198
+        ]
+      ]
+    },
+    {
+      "tag": "Shape",
+      "shape": "rectangle",
       "texts": [
         {
-          "text": "Search DB",
-          "fontSize": 12
+          "text": "Recommendations API",
+          "fontSize": 14
         }
       ],
-      "id": "search_db",
-      "x": 808.8671875,
-      "y": 555,
-      "width": 50,
-      "height": 50,
+      "icon": "thumbs-up",
+      "bgColor": "#E6F7E6",
+      "borderColor": "#5BA85B",
+      "id": "recs_svc",
+      "x": 917.33203125,
+      "y": 85,
+      "width": 180,
+      "height": 70,
       "containerId": "services_group"
     },
     {
       "tag": "Relationship",
-      "from": "reviews_svc",
+      "from": "recs_svc",
       "fromPort": "bottom",
-      "to": "reviews_ai",
+      "to": "search_svc",
       "toPort": "top",
-      "id": "r9",
-      "x": 754.8671875,
+      "lineStyle": "dashed",
+      "color": "gray",
+      "endArrowhead": "triangle",
+      "lineWidth": 0.75,
+      "id": "r18",
+      "x": 1007.33203125,
       "y": 155,
-      "width": 39,
+      "width": 130,
+      "height": 306,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          153
+        ],
+        [
+          -130,
+          153
+        ],
+        [
+          -130,
+          306
+        ]
+      ]
+    },
+    {
+      "tag": "Relationship",
+      "from": "recs_svc",
+      "fromPort": "bottom",
+      "to": "recs_ai",
+      "toPort": "top",
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75,
+      "id": "r11",
+      "x": 1019.33203125,
+      "y": 155,
+      "width": 28,
       "height": 36,
       "points": [
         [
@@ -462,35 +353,14 @@ freeform-diagram
           18
         ],
         [
-          39,
+          28,
           18
         ],
         [
-          39,
+          28,
           36
         ]
-      ],
-      "endArrowhead": "triangle",
-      "lineStyle": "solid",
-      "color": "#1c1c1c",
-      "lineWidth": 0.75
-    },
-    {
-      "tag": "Icon",
-      "icon": "sparkle",
-      "texts": [
-        {
-          "text": "AI",
-          "fontSize": 12
-        }
-      ],
-      "color": "#9B59B6",
-      "id": "search_ai",
-      "x": 888.8671875,
-      "y": 555,
-      "width": 50,
-      "height": 50,
-      "containerId": "services_group"
+      ]
     },
     {
       "tag": "Relationship",
@@ -498,8 +368,12 @@ freeform-diagram
       "fromPort": "right",
       "to": "recs_svc",
       "toPort": "left",
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75,
       "id": "r4",
-      "x": 308.8671875,
+      "x": 317.33203125,
       "y": 280,
       "width": 600,
       "height": 154,
@@ -520,11 +394,76 @@ freeform-diagram
           600,
           -154
         ]
+      ]
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Recs DB",
+          "fontSize": 12
+        }
       ],
+      "id": "recs_db",
+      "x": 942.33203125,
+      "y": 185,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "recs_svc",
+      "fromPort": "bottom",
+      "to": "recs_db",
+      "toPort": "top",
       "endArrowhead": "triangle",
       "lineStyle": "solid",
       "color": "#1c1c1c",
-      "lineWidth": 0.75
+      "lineWidth": 0.75,
+      "id": "r10",
+      "x": 995.33203125,
+      "y": 155,
+      "width": 28,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          -28,
+          18
+        ],
+        [
+          -28,
+          36
+        ]
+      ]
+    },
+    {
+      "tag": "Shape",
+      "shape": "rectangle",
+      "texts": [
+        {
+          "text": "Item API",
+          "fontSize": 15
+        }
+      ],
+      "icon": "package",
+      "bgColor": "#FFF4E0",
+      "borderColor": "#E0A040",
+      "id": "item_svc",
+      "x": 437.33203125,
+      "y": 85,
+      "width": 160,
+      "height": 70,
+      "containerId": "services_group"
     },
     {
       "tag": "Relationship",
@@ -534,8 +473,10 @@ freeform-diagram
       "toPort": "right",
       "lineStyle": "dashed",
       "color": "gray",
+      "endArrowhead": "triangle",
+      "lineWidth": 0.75,
       "id": "r16",
-      "x": 908.8671875,
+      "x": 917.33203125,
       "y": 114,
       "width": 320,
       "height": 64,
@@ -564,171 +505,33 @@ freeform-diagram
           -320,
           -1
         ]
-      ],
-      "endArrowhead": "triangle",
-      "lineWidth": 0.75
+      ]
     },
     {
       "tag": "Relationship",
-      "from": "recs_svc",
-      "fromPort": "bottom",
-      "to": "recs_db",
-      "toPort": "top",
-      "id": "r10",
-      "x": 986.8671875,
-      "y": 155,
-      "width": 28,
-      "height": 36,
+      "from": "reviews_svc",
+      "fromPort": "left",
+      "to": "item_svc",
+      "toPort": "right",
+      "lineStyle": "dashed",
+      "color": "gray",
+      "endArrowhead": "triangle",
+      "lineWidth": 0.75,
+      "id": "r15",
+      "x": 677.33203125,
+      "y": 120,
+      "width": 80,
+      "height": 0,
       "points": [
         [
           0,
           0
         ],
         [
-          0,
-          18
-        ],
-        [
-          -28,
-          18
-        ],
-        [
-          -28,
-          36
+          -80,
+          0
         ]
-      ],
-      "endArrowhead": "triangle",
-      "lineStyle": "solid",
-      "color": "#1c1c1c",
-      "lineWidth": 0.75
-    },
-    {
-      "tag": "Relationship",
-      "from": "recs_svc",
-      "fromPort": "bottom",
-      "to": "recs_ai",
-      "toPort": "top",
-      "id": "r11",
-      "x": 1010.8671875,
-      "y": 155,
-      "width": 28,
-      "height": 36,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          18
-        ],
-        [
-          28,
-          18
-        ],
-        [
-          28,
-          36
-        ]
-      ],
-      "endArrowhead": "triangle",
-      "lineStyle": "solid",
-      "color": "#1c1c1c",
-      "lineWidth": 0.75
-    },
-    {
-      "tag": "Relationship",
-      "from": "api_gateway",
-      "fromPort": "right",
-      "to": "auth_svc",
-      "toPort": "left",
-      "id": "r5",
-      "x": 308.8671875,
-      "y": 304,
-      "width": 120,
-      "height": 192,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          40,
-          0
-        ],
-        [
-          40,
-          192
-        ],
-        [
-          120,
-          192
-        ]
-      ],
-      "endArrowhead": "triangle",
-      "lineStyle": "solid",
-      "color": "#1c1c1c",
-      "lineWidth": 0.75
-    },
-    {
-      "tag": "Relationship",
-      "from": "auth_svc",
-      "fromPort": "bottom",
-      "to": "auth_db",
-      "toPort": "top",
-      "id": "r12",
-      "x": 508.8671875,
-      "y": 531,
-      "width": 0,
-      "height": 36,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          36
-        ]
-      ],
-      "endArrowhead": "triangle",
-      "lineStyle": "solid",
-      "color": "#1c1c1c",
-      "lineWidth": 0.75
-    },
-    {
-      "tag": "Relationship",
-      "from": "api_gateway",
-      "fromPort": "right",
-      "to": "search_svc",
-      "toPort": "left",
-      "id": "r6",
-      "x": 308.8671875,
-      "y": 292,
-      "width": 480,
-      "height": 198,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          420,
-          0
-        ],
-        [
-          420,
-          198
-        ],
-        [
-          480,
-          198
-        ]
-      ],
-      "endArrowhead": "triangle",
-      "lineStyle": "solid",
-      "color": "#1c1c1c",
-      "lineWidth": 0.75
+      ]
     },
     {
       "tag": "Relationship",
@@ -738,8 +541,10 @@ freeform-diagram
       "toPort": "bottom",
       "lineStyle": "dashed",
       "color": "gray",
+      "endArrowhead": "triangle",
+      "lineWidth": 0.75,
       "id": "r17",
-      "x": 788.8671875,
+      "x": 797.33203125,
       "y": 502,
       "width": 274,
       "height": 347,
@@ -764,54 +569,109 @@ freeform-diagram
           -274,
           -347
         ]
-      ],
-      "endArrowhead": "triangle",
-      "lineWidth": 0.75
+      ]
     },
     {
       "tag": "Relationship",
-      "from": "recs_svc",
-      "fromPort": "bottom",
-      "to": "search_svc",
-      "toPort": "top",
-      "lineStyle": "dashed",
-      "color": "gray",
-      "id": "r18",
-      "x": 998.8671875,
-      "y": 155,
-      "width": 130,
-      "height": 306,
+      "from": "api_gateway",
+      "fromPort": "right",
+      "to": "item_svc",
+      "toPort": "left",
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75,
+      "id": "r2",
+      "x": 317.33203125,
+      "y": 256,
+      "width": 120,
+      "height": 136,
       "points": [
         [
           0,
           0
         ],
         [
-          0,
-          153
+          40,
+          0
         ],
         [
-          -130,
-          153
+          40,
+          -136
         ],
         [
-          -130,
-          306
+          120,
+          -136
         ]
+      ]
+    },
+    {
+      "tag": "Shape",
+      "shape": "rectangle",
+      "texts": [
+        {
+          "text": "Auth API",
+          "fontSize": 15
+        }
       ],
-      "endArrowhead": "triangle",
-      "lineWidth": 0.75
+      "icon": "lock",
+      "bgColor": "#FFE0E0",
+      "borderColor": "#D95B5B",
+      "id": "auth_svc",
+      "x": 437.33203125,
+      "y": 455,
+      "width": 160,
+      "height": 70,
+      "containerId": "services_group"
     },
     {
       "tag": "Relationship",
-      "from": "search_svc",
+      "from": "api_gateway",
+      "fromPort": "right",
+      "to": "auth_svc",
+      "toPort": "left",
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75,
+      "id": "r5",
+      "x": 317.33203125,
+      "y": 304,
+      "width": 120,
+      "height": 192,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          40,
+          192
+        ],
+        [
+          120,
+          192
+        ]
+      ]
+    },
+    {
+      "tag": "Relationship",
+      "from": "auth_svc",
       "fromPort": "bottom",
-      "to": "search_db",
+      "to": "auth_db",
       "toPort": "top",
-      "id": "r13",
-      "x": 862.8671875,
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75,
+      "id": "r12",
+      "x": 517.33203125,
       "y": 531,
-      "width": 29,
+      "width": 0,
       "height": 36,
       "points": [
         [
@@ -820,21 +680,68 @@ freeform-diagram
         ],
         [
           0,
-          18
-        ],
-        [
-          -29,
-          18
-        ],
-        [
-          -29,
           36
         ]
+      ]
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Item DB",
+          "fontSize": 12
+        }
       ],
+      "id": "item_db",
+      "x": 492.33203125,
+      "y": 185,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "item_svc",
+      "fromPort": "bottom",
+      "to": "item_db",
+      "toPort": "top",
       "endArrowhead": "triangle",
       "lineStyle": "solid",
       "color": "#1c1c1c",
-      "lineWidth": 0.75
+      "lineWidth": 0.75,
+      "id": "r7",
+      "x": 511.33203125,
+      "y": 155,
+      "width": 0,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          36
+        ]
+      ]
+    },
+    {
+      "tag": "Icon",
+      "icon": "sparkle",
+      "texts": [
+        {
+          "text": "AI",
+          "fontSize": 12
+        }
+      ],
+      "color": "#9B59B6",
+      "id": "search_ai",
+      "x": 897.33203125,
+      "y": 555,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
     },
     {
       "tag": "Relationship",
@@ -842,8 +749,12 @@ freeform-diagram
       "fromPort": "bottom",
       "to": "search_ai",
       "toPort": "top",
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75,
       "id": "r14",
-      "x": 874.8671875,
+      "x": 883.33203125,
       "y": 531,
       "width": 39,
       "height": 36,
@@ -864,11 +775,108 @@ freeform-diagram
           39,
           36
         ]
+      ]
+    },
+    {
+      "tag": "Icon",
+      "icon": "sparkle",
+      "texts": [
+        {
+          "text": "AI",
+          "fontSize": 12
+        }
       ],
+      "color": "#9B59B6",
+      "id": "reviews_ai",
+      "x": 777.33203125,
+      "y": 185,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "reviews_svc",
+      "fromPort": "bottom",
+      "to": "reviews_ai",
+      "toPort": "top",
       "endArrowhead": "triangle",
       "lineStyle": "solid",
       "color": "#1c1c1c",
-      "lineWidth": 0.75
+      "lineWidth": 0.75,
+      "id": "r9",
+      "x": 763.33203125,
+      "y": 155,
+      "width": 39,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          39,
+          18
+        ],
+        [
+          39,
+          36
+        ]
+      ]
+    },
+    {
+      "tag": "Icon",
+      "icon": "database",
+      "texts": [
+        {
+          "text": "Search DB",
+          "fontSize": 12
+        }
+      ],
+      "id": "search_db",
+      "x": 817.33203125,
+      "y": 555,
+      "width": 50,
+      "height": 50,
+      "containerId": "services_group"
+    },
+    {
+      "tag": "Relationship",
+      "from": "search_svc",
+      "fromPort": "bottom",
+      "to": "search_db",
+      "toPort": "top",
+      "endArrowhead": "triangle",
+      "lineStyle": "solid",
+      "color": "#1c1c1c",
+      "lineWidth": 0.75,
+      "id": "r13",
+      "x": 871.33203125,
+      "y": 531,
+      "width": 29,
+      "height": 36,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          -29,
+          18
+        ],
+        [
+          -29,
+          36
+        ]
+      ]
     }
   ]
 }
