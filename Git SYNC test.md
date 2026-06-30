@@ -6,7 +6,7 @@
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/Git SYNC test-Microservices Architecture with API Gateway-1.eraserdiagram" data-element-id="rs4NeHyaOWMIDtEnQ_DI"><img src="undefined" alt="" data-element-id="rs4NeHyaOWMIDtEnQ_DI" /></a>
+<a href="/Git SYNC test-Microservices Architecture with API Gateway-1.eraserdiagram" data-element-id="Nga6ZxQbMEju-Km5RU0P"><img src="undefined" alt="" data-element-id="Nga6ZxQbMEju-Km5RU0P" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: http://localhost:3001/workspace/WO1FOv7CB362VuDetetF --->
