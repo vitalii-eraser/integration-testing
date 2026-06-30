@@ -13,8 +13,8 @@ freeform-diagram
         }
       ],
       "id": "product_page",
-      "x": 100,
-      "y": 400,
+      "x": 20,
+      "y": 100,
       "width": 60,
       "height": 60
     },
@@ -23,8 +23,8 @@ freeform-diagram
       "shape": "hexagon",
       "texts": [
         {
-          "text": "API Gateway",
-          "fontSize": 15
+          "text": "API Gateway API Gateway API Gateway API Gateway",
+          "fontSize": 18
         }
       ],
       "icon": "shuffle",
