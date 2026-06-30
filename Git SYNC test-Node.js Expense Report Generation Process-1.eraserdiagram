@@ -15,7 +15,7 @@ freeform-diagram
       "bgColor": "#d4f1d4",
       "styleMode": "shadow",
       "id": "start",
-      "x": 275,
+      "x": 175,
       "y": 15,
       "width": 200,
       "height": 60
@@ -206,7 +206,7 @@ freeform-diagram
       "shape": "diamond",
       "texts": [
         {
-          "text": "Parse JSON\nsuccess?",
+          "text": "Parse JSON\nsuccess? Or no\n Leave it decide for computer",
           "fontSize": 14
         }
       ],
@@ -567,7 +567,7 @@ freeform-diagram
       ],
       "bgColor": "#d4f1f9",
       "id": "default",
-      "x": 695,
+      "x": 895,
       "y": 1145,
       "width": 220,
       "height": 70
@@ -636,7 +636,7 @@ freeform-diagram
       ],
       "bgColor": "#e8e8fc",
       "id": "console",
-      "x": 265,
+      "x": 165,
       "y": 1385,
       "width": 220,
       "height": 70
