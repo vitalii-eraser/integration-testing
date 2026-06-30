@@ -31,8 +31,8 @@ freeform-diagram
         }
       ],
       "id": "product_page",
-      "x": 28.8671875,
-      "y": 415,
+      "x": -50.8671875,
+      "y": 115,
       "width": 50,
       "height": 50
     },
@@ -535,8 +535,8 @@ freeform-diagram
       "icon": "database",
       "texts": [
         {
-          "text": "Search DB",
-          "fontSize": 12
+          "text": "Search DB Search DB Search DB Search DB",
+          "fontSize": 16
         }
       ],
       "id": "search_db",
