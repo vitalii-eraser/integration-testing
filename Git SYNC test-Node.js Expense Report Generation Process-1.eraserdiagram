@@ -15,7 +15,7 @@ freeform-diagram
       "bgColor": "#d4edda",
       "borderColor": "#28a745",
       "id": "start",
-      "x": 535,
+      "x": 735,
       "y": 15,
       "width": 200,
       "height": 70
@@ -92,8 +92,8 @@ freeform-diagram
       "bgColor": "#f8d7da",
       "borderColor": "#dc3545",
       "id": "usageerr",
-      "x": 835,
-      "y": 275,
+      "x": 935,
+      "y": 375,
       "width": 220,
       "height": 70
     },
@@ -474,7 +474,7 @@ freeform-diagram
       "bgColor": "#fce4ec",
       "borderColor": "#e91e63",
       "id": "travel",
-      "x": 15,
+      "x": -105,
       "y": 1405,
       "width": 180,
       "height": 75
@@ -648,7 +648,7 @@ freeform-diagram
       "shape": "rectangle",
       "texts": [
         {
-          "text": "Build report:\nheader + lines + total",
+          "text": "Build report:\nheader + lines + total\nheader + lines + total\nheader + lines + total\nheader + lines + total",
           "fontSize": 12
         }
       ],
